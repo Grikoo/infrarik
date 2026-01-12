@@ -1,0 +1,9 @@
+services:
+  proxy:
+    image: nginx:alpine
+    container_name: infra-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped
