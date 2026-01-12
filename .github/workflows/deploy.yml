@@ -21,4 +21,4 @@ jobs:
             git reset --hard origin/main
             git log -1 --oneline
             docker compose version
-            docker compose -f docker-compose.prod.yml up -d --build --force-recreate --remove-orphans
+            docker compose -f docker-compose.yml up -d --build --force-recreate --remove-orphans
